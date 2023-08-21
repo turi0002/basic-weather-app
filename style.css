@@ -1,0 +1,13 @@
+body{
+    margin-left: 0%;
+}
+
+#header-continer{
+    width: 100vw;
+    height: 35vh;
+    background-image: url("https://wallpapercave.com/wp/t1ZMnHR.jpg");
+    display: flex;
+    margin-top: 0;
+    margin-left: 0;
+    justify-content: left;
+}
