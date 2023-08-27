@@ -1,5 +1,7 @@
 body{
     margin-left: 0%;
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
 }
 #main-icon{
    width: 5vw;
@@ -16,19 +18,14 @@ body{
     flex-wrap: wrap;
     margin-top: 0;
     margin-left: 0;
-    align-items: center;
-}
-#main-icon-container{
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    margin-top: 2vh;
+    justify-content: center;
     
 }
+
 #search-container{
     display: flex;
-    margin-left: 12vw;
-    
+    flex-direction: column;
+   
 }
 
 .byline{
@@ -42,15 +39,19 @@ body{
 
 
 .searchBox{
+    display: flex;
     background-color:#fffbf8;
     padding:13px;
     width:335px;
     margin:80px auto;
+    margin-left: 3vw;
     -webkit-box-sizing:border-box;
     -moz-box-sizing:border-box;
     box-sizing:border-box;
     border-radius:6px;
     padding-left: 0;
+    height: 7vh;
+    justify-content: center;
     
 }
 input[type="search"]{
@@ -79,3 +80,92 @@ button[type="submit"]{
 input[type="search"]:focus{
     outline:0;
 }
+div.widget
+{
+  position: relative;
+  display: flex;
+  width: 355px;
+  height: 125px;
+  margin: 150px auto;
+  margin-top: 80px;
+  background-color: #fcfdfd;
+  border-radius: 9px;
+  padding: 25px;
+  margin-left: 1vw;
+  margin-bottom: 10vh;
+  padding-right: 30px;
+  box-shadow: 0px 31px 35px -26px #080c21;
+  background-color: #087082;
+}
+
+
+div.date
+{
+  font-size: 14px;
+  font-weight: bold;
+  color: rgba(0,0,0,0.5);
+}
+
+div.city
+{
+  font-size: 21px;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-top: 5px;
+  color: rgba(0,0,0,0.7);
+}
+
+div.temp
+{
+  font-size: 81px;
+  color: rgba(0,0,0,0.9);
+  font-weight: 100;
+}
+
+div.panel
+{
+  display: inline-block;
+}
+
+div.weather-icon
+{
+  top: 0;
+  margin-top: 20px;
+  padding-left: 4vw;
+}
+
+
+
+
+.forecast-container {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.day {
+    background-color: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-radius: 8px;
+    text-align: center;
+    color: #fff;
+    width: 30%;
+}
+
+.day h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.day img {
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.day p {
+    font-size: 14px;
+    margin: 5px 0;
+}
+
+/* ... Your existing CSS rules ... */
